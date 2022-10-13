@@ -1,0 +1,26 @@
+{
+  "Functional Component": {
+    "prefix": "fc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "interface ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Props {}",
+      "",
+      "const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}: React.FC<${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}Props> = () => <h1>${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/} Component</h1>",
+      "",
+      "export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/};"
+    ]
+  },
+  "Clean Functional Component": {
+    "prefix": "cfc",
+    "body": [
+      "import { FC } from 'react';",
+      "",
+      "const ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}: FC = () => {",
+      "  return <h1></h1>",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/};"
+    ]
+  }
+}
