@@ -1,0 +1,31 @@
+body {
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid lightgray;
+}
+
+div div.box {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+}
+
+.box-first {
+  background-color: yellow;
+}
+
+.box-first {
+  background-color: blue;
+}
+
+.box-second {
+  background-color: red;
+}
+.box-third {
+  background-color: green;
+}
