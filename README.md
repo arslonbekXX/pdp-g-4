@@ -1,14 +1,7 @@
-# ---------- 13.10.22 ----------(168)
+# ---------- 15.10.22 ----------(98)
 
-## 1️⃣ Git 👍🏻
+## 1️⃣ CSS Module Practice
 
-     ✅ git add .
-     ✅ git commit -m "message for commit"
-     ✅ git commit -m "message for shokhrukh"
-     ✅ git push origin lesson-168
+## 2️⃣ Redux structure
 
-## 2️⃣ CSS Module 👍🏻
-
-## 3️⃣ Coding Bat Routing 👍🏻
-
-## 4️⃣ Homework UI & UX 👍🏻
+## 3️⃣ Page structure
