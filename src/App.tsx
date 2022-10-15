@@ -5,12 +5,11 @@ import { Section, Problem, Login, Register, Home } from "./pages";
 const App: FC = () => (
   <div>
     <Routes>
-      <Route path='login' element={<Login />} />
-      <Route path='register' element={<Register />} />
-
       <Route path='' element={<Home />} />
       <Route path='section' element={<Section />} />
       <Route path='problem' element={<Problem />} />
+      <Route path='login' element={<Login />} />
+      <Route path='register' element={<Register />} />
     </Routes>
   </div>
 );
