@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+* {
+  font-family: "Roboto Mono";
+  //
+}
+
+.register_page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #050d21;
+  flex-direction: column;
+  
+
+  .inner_box {
+    width: 45%;
+    height: 70%;
+    // background-color: red;
+
+    .text {
+      font-weight: 500;
+      font-size: 20px;
+      color: #ffffff;
+      // background-color: aqua;
+    }
+
+    // background: #1E1E1E;
+    .register_box {
+      width: 100%;
+      height: 75%;
+      background: rgba(217, 217, 217, 0.03);
+      border-radius: 10px;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      form {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .email {
+            height: 45px;
+            display: flex;
+            background: rgba(217, 217, 217, 0.03);
+            border-radius: 10px;
+            span {
+              font-size: 27px;
+              padding: 0px 6px 0px 6px;
+            }
+            input {
+              height: 100%;
+              width: 90%;
+              outline: none;
+              background: none;
+              border: none;
+              color: #ffffff;
+            }
+          }
+
+
+        .username {
+          height: 45px;
+          display: flex;
+          background: rgba(217, 217, 217, 0.03);
+          border-radius: 10px;
+          span {
+            font-size: 27px;
+            padding: 0px 6px 0px 6px;
+          }
+          input {
+            height: 100%;
+            width: 90%;
+            outline: none;
+            background: none;
+            border: none;
+            color: #ffffff;
+          }
+        }
+
+        .password {
+          height: 45px;
+          display: flex;
+          background: rgba(217, 217, 217, 0.03);
+          border-radius: 10px;
+          span {
+            font-size: 27px;
+            padding: 0px 6px 0px 6px;
+          }
+          input {
+            height: 100%;
+            width: 81%;
+            outline: none;
+            background: none;
+            border: none;
+            color: #ffffff;
+          }
+
+          .showPsw {
+            color: #4f728e;
+          }
+        }
+        ::placeholder {
+          color: #4f728e;
+        }
+
+        .link {
+          margin-top: -15px;
+          font-size: 12px;
+          padding: 0;
+          text-decoration: underline;
+          margin-bottom: -15px;
+          a {
+            color: #4f728e;
+            text-decoration: none;
+          }
+        }
+
+        .register_btn {
+          height: 45px;
+          width: 100%;
+          background: #2db97c;
+          border-radius: 10px;
+          border: none;
+          color: #ffffff;
+        }
+        .register_btn:hover {
+          background: #05ec88;
+        }
+      }
+    }
+  }
+}
