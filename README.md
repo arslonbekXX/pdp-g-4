@@ -1,11 +1,11 @@
-# ---------- 15.10.22 ----------(98)
+# ---------- 18.10.22 ----------(99)
 
-## 1️⃣ CSS Module Practice
+## 1️⃣ Checking Home Works
 
-## 2️⃣ Redux structure
+## 2️⃣ Install Postman
 
-## 3️⃣ Page structure
+## 3️⃣ Testing backend end-points
 
-https://github.com/sudheerj/javascript-interview-questions
+## 4️⃣ Using axios for backend end-points
 
-https://www.youtube.com/results?search_query=gocodinggo
+## 🎩 [swagger](http://204.236.203.14:8090/swagger-ui/#/)
