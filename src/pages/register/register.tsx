@@ -2,22 +2,15 @@ import { AxiosResponse } from "axios";
 import { http } from "../../services";
 import React, { FormEventHandler } from "react";
 
-import cls from "./login.module.scss";
-import { useNavigate } from "react-router-dom";
+import cls from "./register.module.scss";
 
-interface ISignInResponse {
+interface IRegister {
   success: boolean;
-  message: string;
-  data: {
-    accessToken: string;
-    refreshToken: string;
-    tokenType: string;
-  };
 }
-const Login: React.FC = () => {
+const Register: React.FC = () => {
   const emailRef = React.useRef<HTMLInputElement>(null);
   const passwordRef = React.useRef<HTMLInputElement>(null);
-  const navigate = useNavigate();
+
   const onSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
 
@@ -29,22 +22,19 @@ const Login: React.FC = () => {
       password,
     };
 
-    const { data }: AxiosResponse<ISignInResponse> = await http.post(
-      "/auth/sign-in",
+    const { data }: AxiosResponse<IRegister> = await http.post(
+      "/auth/sign-up",
       body
     );
 
-    const { data: langData }: AxiosResponse<any> = await http.get(
-      "/language/list-for-users"
-    );
+    await http.get(`/auth/verification-email/${email}`);
 
-    navigate(`/${langData.data[0].id}`)
-    console.log("langData = ", langData);
+    console.log("success = ", data.success);
   };
 
   return (
     <div className={cls.wrapper}>
-      <h1 className={cls.title}>Login Component</h1>
+      <h1 className={cls.title}>Register Component</h1>
       <form onSubmit={onSubmit}>
         <div>
           <label htmlFor='email'>Email</label>
@@ -64,9 +54,9 @@ const Login: React.FC = () => {
             ref={passwordRef}
           />
         </div>
-        <button>Submit</button>
+        <button>Submit</button>;
       </form>
     </div>
   );
 };
-export default Login;
+export default Register;

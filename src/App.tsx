@@ -5,7 +5,7 @@ import { Section, Problem, Login, Register, Home } from "./pages";
 const App: FC = () => (
   <div>
     <Routes>
-      <Route path='' element={<Home />} />
+      <Route path='/:languageID' element={<Home />} />
       <Route path='section' element={<Section />} />
       <Route path='problem' element={<Problem />} />
       <Route path='login' element={<Login />} />
