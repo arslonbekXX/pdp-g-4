@@ -1,27 +1,20 @@
-import { AxiosResponse } from "axios";
 import { http } from "../../services";
 import React, { FormEventHandler } from "react";
 
 import cls from "./login.module.scss";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../../store/slices/auth";
 
-interface ISignInResponse {
-  success: boolean;
-  message: string;
-  data: {
-    accessToken: string;
-    refreshToken: string;
-    tokenType: string;
-  };
-}
 const Login: React.FC = () => {
   const emailRef = React.useRef<HTMLInputElement>(null);
   const passwordRef = React.useRef<HTMLInputElement>(null);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const onSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
 
-    const email = emailRef.current?.value;
+    const email = emailRef.current?.value!;
     const password = passwordRef.current?.value;
 
     const body = {
@@ -29,17 +22,11 @@ const Login: React.FC = () => {
       password,
     };
 
-    const { data }: AxiosResponse<ISignInResponse> = await http.post(
-      "/auth/sign-in",
-      body
-    );
+    const { accessToken } = (await http.post("/auth/sign-in", body)).data.data;
 
-    const { data: langData }: AxiosResponse<any> = await http.get(
-      "/language/list-for-users"
-    );
-
-    navigate(`/${langData.data[0].id}`)
-    console.log("langData = ", langData);
+    localStorage.setItem("accessToken", accessToken);
+    dispatch(login({ email, accessToken }));
+    navigate("/");
   };
 
   return (
