@@ -1,12 +1,16 @@
-# ---------- 18.10.22 ----------(99)
+# ---------- 20.10.22 ----------(100)
 
-## 1️⃣ Checking Home Works 👍🏻
+## 1️⃣ Checking Home Works
 
-## 2️⃣ Install Postman 👍🏻👍🏻
+## 2️⃣ Redux structure
 
-## 3️⃣ Testing backend end-points 👍🏻👍🏻
+       ✅ create slices
+       ✅ create actions
+       ✅ create reducers
 
-## 4️⃣ Using axios for backend end-points 👍🏻👍🏻
+## 3️⃣ Pagination logics for end-points
+
+## 4️⃣ Auth logics
 
 ## 5️⃣ HomeWorks
 
