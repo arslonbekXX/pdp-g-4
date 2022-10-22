@@ -5,6 +5,7 @@ export interface Language {
   title: string;
   url: string;
 }
+
 export interface Section {
   id: number;
   title: string;

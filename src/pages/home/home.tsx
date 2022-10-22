@@ -37,10 +37,7 @@ const Home: React.FC<HomeProps> = () => {
         <h3>Languages</h3>
         <ol>
           {languages.map((language) => (
-            <li
-              style={languageID == language.id ? { background: "red" } : {}}
-              key={language.id}
-              onClick={() => navigate(`/${language.id}`)}>
+            <li style={languageID == language.id ? { background: "red" } : {}} key={language.id} onClick={() => navigate(`/${language.id}`)}>
               {language.title}
             </li>
           ))}
@@ -52,9 +49,7 @@ const Home: React.FC<HomeProps> = () => {
           <h3>Sections</h3>
           <ol>
             {sections.map((section) => (
-              <li
-                key={section.id}
-                onClick={() => navigate(`/section/${section.id}`)}>
+              <li key={section.id} onClick={() => navigate(`/section/${section.id}`)}>
                 {section.title}
                 <p>{section.description}</p>
                 <span>Max Rate = {section.maxRate}</span>

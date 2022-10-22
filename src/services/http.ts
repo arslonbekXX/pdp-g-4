@@ -1,8 +1,6 @@
 import axios, { AxiosRequestConfig } from "axios";
 
-const http = axios.create({
-  baseURL: "http://204.236.203.14:8090/api",
-});
+const http = axios.create({ baseURL: "http://204.236.203.14:8090/api" });
 
 http.interceptors.request.use(
   (config: AxiosRequestConfig) => {
