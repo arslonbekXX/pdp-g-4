@@ -2,19 +2,14 @@
 
 ## 1️⃣ Checking Home Works
 
-## 2️⃣ Redux structure
+## 2️⃣ Create custom hook for axios end-points
 
-       ✅ create slices
-       ✅ create actions
-       ✅ create reducers
+## 3️⃣ Adding loading skeletons
 
-## 3️⃣ Pagination logics for end-points
+       ✅ languages
+       ✅ sections
+       ✅ problems
 
-## 4️⃣ Auth logics
-
-## 5️⃣ HomeWorks
-
-       ✅ Auth full logics (routing || save user)
-       ✅ Languages and Section logics (routing || save user)
+## 4️⃣ Testing admin role
 
 ## 🎩 [swagger](http://204.236.203.14:8090/swagger-ui/#/)
