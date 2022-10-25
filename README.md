@@ -1,15 +1,19 @@
-# ---------- 22.10.22 ----------(101)
+# ---------- 25.10.22 ----------(102)
 
-## 1️⃣ Checking Home Works
+## 1️⃣ Learning technologies
 
-## 2️⃣ Create custom hook for axios end-points
-
-## 3️⃣ Adding loading skeletons
-
-       ✅ languages
-       ✅ sections
-       ✅ problems
-
-## 4️⃣ Testing admin role
-
-## 🎩 [swagger](http://204.236.203.14:8090/swagger-ui/#/)
+       ✅ EXECUTION CONTEXT
+       ✅ HEAP && STACK
+       ✅ Function Scope, Block Scope and Lexical Scope
+       ✅ Expression vs Statement
+       ✅ Message Queue and Event Loop
+       ✅ Factories and Classes
+       ✅ this, call, apply and bind
+       ✅ Prototype Inheritance and Prototype Chain
+       ✅ Object.create and Object.assign
+       ✅ Closures
+       ✅ High Order Functions
+       ✅ Promises
+       ✅ async/await
+       ✅ Callback hell
+       ✅ Partial Applications, Currying, Compose and Pipe
