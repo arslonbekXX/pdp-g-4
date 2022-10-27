@@ -1,37 +1,18 @@
 "use strict";
 
-console.log(1);
-setTimeout(function () {
-  console.log(2);
-}, 0);
+// HOF
 
-setTimeout(function () {
-  console.log(3);
-}, 0);
-Promise.resolve(4).then(function () {
-  console.log(4);
-});
-Promise.resolve(5).then(function () {
-  setTimeout(function () {
-    console.log(5);
-  }, 0);
-});
-setTimeout(function () {
-  Promise.resolve(6).then(function () {
-    console.log(6);
-  });
-}, 0);
-console.log(7);
+let numbers = [1, 2, 3, 4, 5];
 
-/**
- * NEW : 1,7,4,2,3,6,5
- *
- * Ilyos: 1,7,2,3,4,5,6
- * Baxtiyor:
- * Jamshidbek: 1,7,4,2,3,6,5
- * Group: 1,7,4,2,3,5,6
- * Correct: 1,7,4,2,3,6,5
- *
- *
- *
- */
+let numbers2 = pow(numbers); // [1, 4, 9, 16, 25];
+
+console.log("numbers = ", numbers);
+console.log("numbers2 = ", numbers2);
+
+function pow(numbers = []) {
+  let temp = [];
+  for (let idx = 0; idx < numbers.length; idx++) {
+    temp.push(numbers[idx] ** 2);
+  }
+  return temp;
+}

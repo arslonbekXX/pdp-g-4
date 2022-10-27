@@ -1,14 +1,14 @@
-# ---------- 25.10.22 ----------(102)
+# ---------- 27.10.22 ----------(103)
 
 ## 1️⃣ Learning technologies
 
        ✅ EXECUTION CONTEXT
        ✅ HEAP && STACK
        ✅ Function Scope, Block Scope and Lexical Scope
-       ✅ Expression vs Statement 👋🏻
+       ✅ Expression vs Statement 👍🏻
        ✅ Callback Queue and Event Loop 👍🏻
        ✅ Factories and Classes
-       ✅ this, call, apply and bind 👋🏻
+       ✅ this, call, apply and bind 👍🏻
        ✅ Prototype Inheritance and Prototype Chain
        ✅ Object.create and Object.assign
        ✅ Closures
@@ -17,3 +17,7 @@
        ✅ async/await
        ✅ Callback hell
        ✅ Partial Applications, Currying, Compose and Pipe
+
+
+
+https://the-winter.github.io/codingjs/
