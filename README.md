@@ -12,12 +12,10 @@
        ✅ Prototype Inheritance and Prototype Chain
        ✅ Object.create and Object.assign
        ✅ Closures
-       ✅ High Order Functions 👋🏻
-       ✅ Promises
-       ✅ async/await
-       ✅ Callback hell
+       ✅ High Order Functions 👍🏻
+       ✅ Promises 👋🏻
+       ✅ async/await 👋🏻
+       ✅ Callback hell 👋🏻
        ✅ Partial Applications, Currying, Compose and Pipe
-
-
 
 https://the-winter.github.io/codingjs/

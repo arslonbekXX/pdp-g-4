@@ -1,18 +1,11 @@
 "use strict";
 
 // HOF
+// currying
+const summa = (a) => (b) => (c) => (d) => a + b + c + d;
 
-let numbers = [1, 2, 3, 4, 5];
+const result = summa(10)(20)(30)(40); // 100
 
-let numbers2 = pow(numbers); // [1, 4, 9, 16, 25];
+console.log(result);
 
-console.log("numbers = ", numbers);
-console.log("numbers2 = ", numbers2);
-
-function pow(numbers = []) {
-  let temp = [];
-  for (let idx = 0; idx < numbers.length; idx++) {
-    temp.push(numbers[idx] ** 2);
-  }
-  return temp;
-}
+app.get("/user", [auth, admin], (req, res) => {});
