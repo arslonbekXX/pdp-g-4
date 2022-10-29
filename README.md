@@ -18,4 +18,13 @@
        ✅ Callback hell 👋🏻
        ✅ Partial Applications, Currying, Compose and Pipe
 
+## 2️⃣ Promises && Callback && Async/Await
+
+       ✅ Callbacks
+       ✅ Understanding Promises
+       ✅ Creating a Promise
+       ✅ Chaining Promises
+       ✅ Promises are Asynchronous
+       ✅ Async/Await
+
 https://the-winter.github.io/codingjs/
