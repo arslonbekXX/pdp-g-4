@@ -1,6 +1,5 @@
 "use strict";
-
-const btns = document.querySelectorAll("button");
+const boxes = document.querySelector(".boxes");
 
 const addImg = async (btn) => {
   try {
@@ -24,12 +23,34 @@ function getImg() {
   });
 }
 
-function startRender(e) {
-  const btn = e.target;
+function init() {
+  const fragment = document.createDocumentFragment();
 
-  btn.innerText = "Loading...";
+  for (let idx = 0; idx < 12; idx++) {
+    const div = document.createElement("div");
+    div.classList.add("box");
 
-  addImg(btn);
+    const btn = document.createElement("button");
+    btn.classList.add("btn");
+    btn.innerText = `Add IMG-${idx + 1}`;
+
+    btn.addEventListener("click", () => {
+      btn.innerText = idx + 1;
+      const interval = setInterval(() => {
+        btn.innerText = +btn.innerText - 1;
+        if (+btn.innerText === 0) {
+          clearInterval(interval);
+          addImg(btn);
+        }
+      }, 1000);
+    });
+
+    div.appendChild(btn);
+
+    fragment.appendChild(div);
+  }
+
+  boxes.appendChild(fragment); //
 }
 
-btns.forEach((btn) => btn.addEventListener("click", startRender));
+init();
