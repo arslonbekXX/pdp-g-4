@@ -15,7 +15,7 @@
        ✅ High Order Functions 👍🏻
        ✅ Promises 👍🏻
        ✅ async/await 👍🏻
-       ✅ Callback hell 👋🏻
+       ✅ Callback hell 👍🏻
        ✅ Partial Applications, Currying, Compose and Pipe
 
 ## 2️⃣ Promises && Callback && Async/Await
