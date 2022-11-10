@@ -21,6 +21,7 @@ var Father = /** @class */ (function () {
     return Father;
 }());
 
+
 var Person = /** @class */ (function (_super) {
     __extends(Person, _super);
     function Person(name, birthYear, fatherName) {

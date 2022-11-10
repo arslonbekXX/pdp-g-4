@@ -68,3 +68,30 @@
 
 // console.log(Person.prototype.eat.prototype === _eat.__proto__);
 // console.log(Person.prototype.eat.prototype.__proto__ === Object.prototype);
+
+let counter = 0;
+function Box(name) {
+  let temp = ++counter;
+  this.name = name;
+
+  // this.run = function () {
+  //   console.log(`temp = ${temp}: ${this.name} is running...`);
+  // };
+
+  // this.jump = function () {
+  //   console.log(`temp = ${temp}: ${this.name} is jumping...`);
+  // };
+}
+
+Box.prototype.run = function () {
+  console.log(`${this.name} is running...`);
+};
+
+Box.prototype.jump = function () {
+  console.log(`${this.name} is jumping...`);
+};
+
+for (let i = 0; i < 100; i++) {
+  const box = new Box(`Box-${i}`);
+  box.run();
+}
