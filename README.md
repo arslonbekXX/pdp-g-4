@@ -1,4 +1,4 @@
-# ---------- 08.11.22 ----------(107)
+# ---------- 10.11.22 ----------(108)
 
 ## 1️⃣ Learning technologies
 
@@ -9,7 +9,7 @@
        ✅ Callback Queue and Event Loop 👍🏻
        ✅ Factories and Classes 👋🏻
        ✅ this, call, apply and bind 👍🏻
-       ✅ Prototype Inheritance and Prototype Chain 👋🏻
+       ✅ Prototype Inheritance and Prototype Chain 👍🏻
        ✅ Object.create and Object.assign 👋🏻
        ✅ Closures
        ✅ High Order Functions 👍🏻

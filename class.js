@@ -1,30 +1,42 @@
 "use strict";
 
-function User(name) {
-  this.name = name;
-  this.myName = function () {
-    console.log(`My name is ${this.name}`);
-  };
-}
+// function Person(name, birthYear) {
+//   this.name = name;
+//   this.birthYear = birthYear;
+// }
 
-class _User {
-  constructor(name) {
+// Person.prototype.run = function run() {
+//   console.log(`${this.name} is running...🏃‍♂️`);
+// };
+
+// Person.prototype.eat = function eat() {
+//   console.log(`${this.name} is eating... 🍽️`);
+// };
+
+// class Father {
+//   constructor(fatherBirthYear) {
+//     this.fatherBirthYear = fatherBirthYear;
+//   }
+
+// }
+
+class Person {
+  constructor(name, birthYear) {
     this.name = name;
+    this.birthYear = birthYear;
   }
 
-  myName() {
-    console.log(`My name is ${this.name}`);
+  run() {
+    console.log(`${this.name} is running...🏃‍♂️`);
   }
-}
 
-const user = new User("userbek");
-const _user = new _User("_userbek");
-
-user.myName();
-_user.myName();
-
-class App extends React.Component {
-  render() {
-    return <h1>Hello World</h1>;
+  eat() {
+    console.log(`${this.name} is eating... 🍽️`);
   }
 }
+
+const person = new Person("Arslonbek", 2001);
+
+console.log(person);
+person.run();
+person.eat();
